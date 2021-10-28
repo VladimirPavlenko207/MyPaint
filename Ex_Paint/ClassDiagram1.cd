@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ex_Paint.FMain" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B+Q1UsEwEe7kPBr+j97Zm3Y3pkKgKUpuCi36x0KsZbk=</HashCode>
+      <FileName>FMain.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="graphical" />
+      <Field Name="userColors" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ex_Paint.HelperClasses.UserColors">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAUAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>HelperClasses\UserColors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.BaseOperation" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAACAEgIAAAAACAAAAAgAAIAAAAAAAABAAAAAAAAAE=</HashCode>
+      <FileName>DrawingShapes\BaseOperation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingBezierCurve" Collapsed="true">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="5.597" />
+        <Point X="5" Y="5.597" />
+        <Point X="5" Y="5.562" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAQAAAAAAAIAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>DrawingShapes\DrawingBezierCurve.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bezierCurve" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingByPencil" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="4.625" />
+        <Point X="5" Y="4.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>DrawingShapes\DrawingByPencil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingEllipce" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="3.812" />
+        <Point X="10" Y="3.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAEAA=</HashCode>
+      <FileName>DrawingShapes\DrawingEllipce.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.166" />
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingIsoscelesTriangle" Collapsed="true">
+    <Position X="10" Y="6.5" Width="2" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="6.2" />
+        <Point X="10.167" Y="6.2" />
+        <Point X="10.167" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAEAA=</HashCode>
+      <FileName>DrawingShapes\DrawingIsoscelesTriangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingLine" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>DrawingShapes\DrawingLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingPoligon" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="6.2" />
+        <Point X="4.938" Y="6.2" />
+        <Point X="4.938" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AKAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAACAAAEAA=</HashCode>
+      <FileName>DrawingShapes\DrawingPoligon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poligon" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingRect" Collapsed="true">
+    <Position X="10" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="5.562" />
+        <Point X="10" Y="5.562" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAEAA=</HashCode>
+      <FileName>DrawingShapes\DrawingRect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.DrawingRoundedRect" Collapsed="true">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="4.625" />
+        <Point X="10" Y="4.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAEAA=</HashCode>
+      <FileName>DrawingShapes\DrawingRoundedRect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="Ex_Paint.DrawingShapes.FillingArea" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Ex_Paint.DrawingShapes.BaseOperation" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="3.312" />
+        <Point X="7.375" Y="3.812" />
+        <Point X="5" Y="3.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAQAAgAAAAAAAAAAAAAAAIEAAAAEAABAAAAAAAAAA=</HashCode>
+      <FileName>DrawingShapes\FillingArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex_Paint.HelperClasses.BezierCurve" Collapsed="true">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAAAAAAAAAAABAAAAAAAAAEAAAAAgAAAAAAAQAA=</HashCode>
+      <FileName>Entities\BezierCurve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ex_Paint.HelperClasses.Poligon" Collapsed="true">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAQAAQAEAAAAAAAAAAQAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entities\Poligon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Ex_Paint.DrawingShapes.Interfaces.IGraphical" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>DrawingShapes\Interfaces\IGraphical.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
